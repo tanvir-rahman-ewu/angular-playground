@@ -1,0 +1,20 @@
+<table class="two-column-table">
+    <thead>
+        <tr>
+            @for(column of columnDefinition; track column.name)
+            {
+                <th>{{ column.title }}</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @for(item of data; track item?.Id) {
+            <tr>
+                @for(column of columnDefinition; track column.name)
+                {
+                    <td>{{ item[column.name] }}</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

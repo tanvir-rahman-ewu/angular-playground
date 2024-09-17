@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.two-column-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.two-column-table th, 
+.two-column-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.two-column-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.two-column-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
