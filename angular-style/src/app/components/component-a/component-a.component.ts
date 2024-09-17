@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './component-a.component.css'
 })
 export class ComponentAComponent {
-
+  name = 'hellowwww'
 }
